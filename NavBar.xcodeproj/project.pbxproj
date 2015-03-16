@@ -1,0 +1,392 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		537204DE0DC28C310048CDA2 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 537204DA0DC28C310048CDA2 /* Localizable.strings */; };
+		D0BE49A918F7163E00626F06 /* Cities.json in Resources */ = {isa = PBXBuildFile; fileRef = D0BE49A818F7163E00626F06 /* Cities.json */; };
+		D0DA720218CC3E9A00440207 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0DA720418CC3E9A00440207 /* Main.storyboard */; };
+		D0DA720618CC3F0600440207 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0DA720518CC3F0600440207 /* Images.xcassets */; };
+		D79348311AB3F69E00F97D65 /* CustomNavigationBarDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79348301AB3F69E00F97D65 /* CustomNavigationBarDetailViewController.swift */; };
+		D79348331AB3F78D00F97D65 /* CustomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79348321AB3F78D00F97D65 /* CustomNavigationBar.swift */; };
+		D79348351AB3FA9400F97D65 /* CustomNavigationBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79348341AB3FA9400F97D65 /* CustomNavigationBarViewController.swift */; };
+		D79348371AB4013300F97D65 /* CustomBackButtonDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79348361AB4013300F97D65 /* CustomBackButtonDetailViewController.swift */; };
+		D79348391AB401C100F97D65 /* CustomBackButtonNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79348381AB401C100F97D65 /* CustomBackButtonNavController.swift */; };
+		D793483B1AB4020D00F97D65 /* CustomBackButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D793483A1AB4020D00F97D65 /* CustomBackButtonViewController.swift */; };
+		D793484F1AB41ABB00F97D65 /* UIApperance+Swift.m in Sources */ = {isa = PBXBuildFile; fileRef = D793484E1AB41ABB00F97D65 /* UIApperance+Swift.m */; };
+		D79348511AB428E200F97D65 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79348501AB428E200F97D65 /* NavigationController.swift */; };
+		D79348531AB4299400F97D65 /* CustomAppearanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79348521AB4299400F97D65 /* CustomAppearanceViewController.swift */; };
+		D7D3E1AF1AB6A8740054A316 /* ExtendedNavBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D3E1AE1AB6A8730054A316 /* ExtendedNavBarViewController.swift */; };
+		D7D3E1B11AB6AC800054A316 /* ExtendedNavBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D3E1B01AB6AC800054A316 /* ExtendedNavBarView.swift */; };
+		D7D3E1B31AB6AD560054A316 /* NavigationPromptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D3E1B21AB6AD560054A316 /* NavigationPromptViewController.swift */; };
+		D7D3E1B51AB6AE1E0054A316 /* CustomTitleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D3E1B41AB6AE1E0054A316 /* CustomTitleViewController.swift */; };
+		D7D3E1B71AB6B8D80054A316 /* CustomRightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D3E1B61AB6B8D80054A316 /* CustomRightViewController.swift */; };
+		D7D3E1B91AB6BD9E0054A316 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D3E1B81AB6BD9E0054A316 /* MainViewController.swift */; };
+		D7D3E1BB1AB6C1860054A316 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D3E1BA1AB6C1860054A316 /* AppDelegate.swift */; };
+		D7D3E1BD1AB6C4B30054A316 /* readme.txt in Resources */ = {isa = PBXBuildFile; fileRef = D7D3E1BC1AB6C4B30054A316 /* readme.txt */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1D6058910D05DD3D006BFB54 /* NavBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NavBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		537204DB0DC28C310048CDA2 /* en */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* NavBar-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "NavBar-Info.plist"; sourceTree = "<group>"; };
+		D0BE49A818F7163E00626F06 /* Cities.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Cities.json; sourceTree = "<group>"; };
+		D0DA720318CC3E9A00440207 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D0DA720518CC3F0600440207 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D0E35F801A8D45B700F74DCE /* ReadMe.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = ReadMe.md; sourceTree = "<group>"; };
+		D79348301AB3F69E00F97D65 /* CustomNavigationBarDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavigationBarDetailViewController.swift; sourceTree = "<group>"; };
+		D79348321AB3F78D00F97D65 /* CustomNavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavigationBar.swift; sourceTree = "<group>"; };
+		D79348341AB3FA9400F97D65 /* CustomNavigationBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavigationBarViewController.swift; sourceTree = "<group>"; };
+		D79348361AB4013300F97D65 /* CustomBackButtonDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomBackButtonDetailViewController.swift; sourceTree = "<group>"; };
+		D79348381AB401C100F97D65 /* CustomBackButtonNavController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomBackButtonNavController.swift; sourceTree = "<group>"; };
+		D793483A1AB4020D00F97D65 /* CustomBackButtonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomBackButtonViewController.swift; sourceTree = "<group>"; };
+		D793484D1AB41ABB00F97D65 /* UIApperance+Swift.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApperance+Swift.h"; sourceTree = "<group>"; };
+		D793484E1AB41ABB00F97D65 /* UIApperance+Swift.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApperance+Swift.m"; sourceTree = "<group>"; };
+		D79348501AB428E200F97D65 /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		D79348521AB4299400F97D65 /* CustomAppearanceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomAppearanceViewController.swift; sourceTree = "<group>"; };
+		D7D3E1AE1AB6A8730054A316 /* ExtendedNavBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtendedNavBarViewController.swift; sourceTree = "<group>"; };
+		D7D3E1B01AB6AC800054A316 /* ExtendedNavBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtendedNavBarView.swift; sourceTree = "<group>"; };
+		D7D3E1B21AB6AD560054A316 /* NavigationPromptViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationPromptViewController.swift; sourceTree = "<group>"; };
+		D7D3E1B41AB6AE1E0054A316 /* CustomTitleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTitleViewController.swift; sourceTree = "<group>"; };
+		D7D3E1B61AB6B8D80054A316 /* CustomRightViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomRightViewController.swift; sourceTree = "<group>"; };
+		D7D3E1B81AB6BD9E0054A316 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		D7D3E1BA1AB6C1860054A316 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D7D3E1BC1AB6C4B30054A316 /* readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme.txt; sourceTree = "<group>"; };
+		D7D3E1BE1AB6C5B80054A316 /* NavBar-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NavBar-Bridging-Header.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* NavBar.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* Toolbar */ = {
+			isa = PBXGroup;
+			children = (
+				D7D3E1BC1AB6C4B30054A316 /* readme.txt */,
+				D0E35F801A8D45B700F74DCE /* ReadMe.md */,
+				29B97315FDCFA39411CA2CEA /* Classes */,
+				29B97317FDCFA39411CA2CEA /* Supporting Files */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = Toolbar;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				D7D3E1BA1AB6C1860054A316 /* AppDelegate.swift */,
+				D0DA720418CC3E9A00440207 /* Main.storyboard */,
+				D79348501AB428E200F97D65 /* NavigationController.swift */,
+				D7D3E1B81AB6BD9E0054A316 /* MainViewController.swift */,
+				D0DA720E18CD014900440207 /* CustomRightView */,
+				D0DA721518CD1D0700440207 /* CustomTitleView */,
+				D0DA721918CD2A1600440207 /* NavigationPrompt */,
+				D0DA720918CC46BB00440207 /* ExtendedNavBar */,
+				D0B26FB418F8A8DC00DE72C7 /* CustomAppearance */,
+				D08E1C7C1901A65A0078A3CD /* CustomBackButton */,
+				D0B7D1D11A6D76E800AC4A88 /* CustomNavigationBar */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D7D3E1BE1AB6C5B80054A316 /* NavBar-Bridging-Header.h */,
+				D0BE49A818F7163E00626F06 /* Cities.json */,
+				8D1107310486CEB800E47090 /* NavBar-Info.plist */,
+				D0DA720518CC3F0600440207 /* Images.xcassets */,
+				537204DA0DC28C310048CDA2 /* Localizable.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D08E1C7C1901A65A0078A3CD /* CustomBackButton */ = {
+			isa = PBXGroup;
+			children = (
+				D79348381AB401C100F97D65 /* CustomBackButtonNavController.swift */,
+				D79348361AB4013300F97D65 /* CustomBackButtonDetailViewController.swift */,
+				D793483A1AB4020D00F97D65 /* CustomBackButtonViewController.swift */,
+				D793484D1AB41ABB00F97D65 /* UIApperance+Swift.h */,
+				D793484E1AB41ABB00F97D65 /* UIApperance+Swift.m */,
+			);
+			path = CustomBackButton;
+			sourceTree = "<group>";
+		};
+		D0B26FB418F8A8DC00DE72C7 /* CustomAppearance */ = {
+			isa = PBXGroup;
+			children = (
+				D79348521AB4299400F97D65 /* CustomAppearanceViewController.swift */,
+			);
+			path = CustomAppearance;
+			sourceTree = "<group>";
+		};
+		D0B7D1D11A6D76E800AC4A88 /* CustomNavigationBar */ = {
+			isa = PBXGroup;
+			children = (
+				D79348321AB3F78D00F97D65 /* CustomNavigationBar.swift */,
+				D79348341AB3FA9400F97D65 /* CustomNavigationBarViewController.swift */,
+				D79348301AB3F69E00F97D65 /* CustomNavigationBarDetailViewController.swift */,
+			);
+			path = CustomNavigationBar;
+			sourceTree = "<group>";
+		};
+		D0DA720918CC46BB00440207 /* ExtendedNavBar */ = {
+			isa = PBXGroup;
+			children = (
+				D7D3E1B01AB6AC800054A316 /* ExtendedNavBarView.swift */,
+				D7D3E1AE1AB6A8730054A316 /* ExtendedNavBarViewController.swift */,
+			);
+			path = ExtendedNavBar;
+			sourceTree = "<group>";
+		};
+		D0DA720E18CD014900440207 /* CustomRightView */ = {
+			isa = PBXGroup;
+			children = (
+				D7D3E1B61AB6B8D80054A316 /* CustomRightViewController.swift */,
+			);
+			path = CustomRightView;
+			sourceTree = "<group>";
+		};
+		D0DA721518CD1D0700440207 /* CustomTitleView */ = {
+			isa = PBXGroup;
+			children = (
+				D7D3E1B41AB6AE1E0054A316 /* CustomTitleViewController.swift */,
+			);
+			path = CustomTitleView;
+			sourceTree = "<group>";
+		};
+		D0DA721918CD2A1600440207 /* NavigationPrompt */ = {
+			isa = PBXGroup;
+			children = (
+				D7D3E1B21AB6AD560054A316 /* NavigationPromptViewController.swift */,
+			);
+			path = NavigationPrompt;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* NavBar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "NavBar" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NavBar;
+			productName = foo;
+			productReference = 1D6058910D05DD3D006BFB54 /* NavBar.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+			};
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "NavBar" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+				en,
+				Base,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* Toolbar */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* NavBar */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7D3E1BD1AB6C4B30054A316 /* readme.txt in Resources */,
+				D0DA720218CC3E9A00440207 /* Main.storyboard in Resources */,
+				D0DA720618CC3F0600440207 /* Images.xcassets in Resources */,
+				D0BE49A918F7163E00626F06 /* Cities.json in Resources */,
+				537204DE0DC28C310048CDA2 /* Localizable.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D793484F1AB41ABB00F97D65 /* UIApperance+Swift.m in Sources */,
+				D7D3E1B31AB6AD560054A316 /* NavigationPromptViewController.swift in Sources */,
+				D79348311AB3F69E00F97D65 /* CustomNavigationBarDetailViewController.swift in Sources */,
+				D79348371AB4013300F97D65 /* CustomBackButtonDetailViewController.swift in Sources */,
+				D793483B1AB4020D00F97D65 /* CustomBackButtonViewController.swift in Sources */,
+				D7D3E1B11AB6AC800054A316 /* ExtendedNavBarView.swift in Sources */,
+				D79348531AB4299400F97D65 /* CustomAppearanceViewController.swift in Sources */,
+				D79348351AB3FA9400F97D65 /* CustomNavigationBarViewController.swift in Sources */,
+				D79348511AB428E200F97D65 /* NavigationController.swift in Sources */,
+				D79348331AB3F78D00F97D65 /* CustomNavigationBar.swift in Sources */,
+				D7D3E1BB1AB6C1860054A316 /* AppDelegate.swift in Sources */,
+				D7D3E1B71AB6B8D80054A316 /* CustomRightViewController.swift in Sources */,
+				D79348391AB401C100F97D65 /* CustomBackButtonNavController.swift in Sources */,
+				D7D3E1B91AB6BD9E0054A316 /* MainViewController.swift in Sources */,
+				D7D3E1AF1AB6A8740054A316 /* ExtendedNavBarViewController.swift in Sources */,
+				D7D3E1B51AB6AE1E0054A316 /* CustomTitleViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		537204DA0DC28C310048CDA2 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				537204DB0DC28C310048CDA2 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		D0DA720418CC3E9A00440207 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D0DA720318CC3E9A00440207 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				INFOPLIST_FILE = "NavBar-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = NavBar;
+				SWIFT_OBJC_BRIDGING_HEADER = "NavBar-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				INFOPLIST_FILE = "NavBar-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = NavBar;
+				SWIFT_OBJC_BRIDGING_HEADER = "NavBar-Bridging-Header.h";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
+				GCC_WARN_SHADOW = YES;
+				GCC_WARN_SIGN_COMPARE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
+				GCC_WARN_SHADOW = YES;
+				GCC_WARN_SIGN_COMPARE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "NavBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "NavBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
