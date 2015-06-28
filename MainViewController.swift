@@ -20,8 +20,8 @@ class MainViewController: UITableViewController, UIActionSheetDelegate {
     
     
     //| ----------------------------------------------------------------------------
-    override func supportedInterfaceOrientations() -> Int {
-        return Int(UIInterfaceOrientationMask.Portrait.rawValue)
+    override func supportedInterfaceOrientations() -> UIInterfaceOrientationMask {
+        return UIInterfaceOrientationMask.Portrait
     }
     
     

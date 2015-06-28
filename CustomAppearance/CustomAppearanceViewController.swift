@@ -30,7 +30,7 @@ class CustomAppearanceViewController: UITableViewController {
         // Load some data to populate the table view with
         let citiesJSONURL = NSBundle.mainBundle().URLForResource("Cities", withExtension: "json")
         let citiesJSONData = NSData(contentsOfURL: citiesJSONURL!)!
-        self.cities = NSJSONSerialization.JSONObjectWithData(citiesJSONData, options: nil, error: nil) as! NSArray?
+        try! self.cities = NSJSONSerialization.JSONObjectWithData(citiesJSONData, options: []) as? NSArray
         
         // Place the background switcher in the toolbar.
         let backgroundSwitcherItem = UIBarButtonItem(customView: self.backgroundSwitcher)
@@ -45,6 +45,7 @@ class CustomAppearanceViewController: UITableViewController {
     
     
     //| ----------------------------------------------------------------------------
+    @available(iOS 8.0, *)
     override func viewWillTransitionToSize(size: CGSize, withTransitionCoordinator coordinator: UIViewControllerTransitionCoordinator) {
         super.viewWillTransitionToSize(size, withTransitionCoordinator: coordinator)
         
@@ -61,6 +62,7 @@ class CustomAppearanceViewController: UITableViewController {
             // barTintColor or barStyle would have the same effect.
             self.configureNewNavBarBackground(self.backgroundSwitcher)
             }, completion: nil)
+
     }
     
     
@@ -208,7 +210,7 @@ class CustomAppearanceViewController: UITableViewController {
     
     //| ----------------------------------------------------------------------------
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("Cell") as! UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("Cell")!
         cell.textLabel?.text = self.cities?[indexPath.row] as! String?
         
         return cell

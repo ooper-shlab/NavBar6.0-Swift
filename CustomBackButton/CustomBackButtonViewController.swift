@@ -30,7 +30,7 @@ class CustomBackButtonViewController: UITableViewController {
         // Load some data to populate the table view with
         let citiesJSONURL = NSBundle.mainBundle().URLForResource("Cities", withExtension: "json")
         let citiesJSONData = NSData(contentsOfURL: citiesJSONURL!)!
-        self.cities = NSJSONSerialization.JSONObjectWithData(citiesJSONData, options: nil, error: nil) as! NSArray?
+        try! self.cities = NSJSONSerialization.JSONObjectWithData(citiesJSONData, options: []) as? NSArray
         
         // Note that images configured as the back bar button's background do
         // not have the current tintColor applied to them, they are displayed
@@ -62,7 +62,7 @@ class CustomBackButtonViewController: UITableViewController {
     //| ----------------------------------------------------------------------------
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "DetailSegue" {
-            (segue.destinationViewController as! CustomBackButtonDetailViewController).city = self.cities?[self.tableView.indexPathForSelectedRow()?.row ?? 0] as! String?
+            (segue.destinationViewController as! CustomBackButtonDetailViewController).city = self.cities?[self.tableView.indexPathForSelectedRow?.row ?? 0] as! String?
         }
     }
     
@@ -77,7 +77,7 @@ class CustomBackButtonViewController: UITableViewController {
     
     //| ----------------------------------------------------------------------------
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("Cell") as! UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("Cell")!
         cell.textLabel?.text = self.cities?[indexPath.row] as! String?
         
         return cell

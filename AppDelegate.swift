@@ -35,8 +35,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UINavigationControllerDel
     //  its supportedInterfaceOrientations.  This allows some of the demos
     //  to rotate into landscape while keeping others in portrait.
     //
-    func navigationControllerSupportedInterfaceOrientations(navigationController: UINavigationController) -> Int {
-        return navigationController.topViewController.supportedInterfaceOrientations()
+    func navigationControllerSupportedInterfaceOrientations(navigationController: UINavigationController) -> UIInterfaceOrientationMask {
+        return navigationController.topViewController!.supportedInterfaceOrientations()
     }
     
 }

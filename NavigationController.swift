@@ -24,8 +24,8 @@ class NavigationController: UINavigationController {
     //  Defer returning the supported interface orientations to the navigation
     //  controller's top-most view controller.
     //
-    override func supportedInterfaceOrientations() -> Int {
-        return self.topViewController.supportedInterfaceOrientations()
+    override func supportedInterfaceOrientations() -> UIInterfaceOrientationMask {
+        return self.topViewController!.supportedInterfaceOrientations()
     }
     
 }

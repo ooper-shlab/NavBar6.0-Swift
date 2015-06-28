@@ -28,7 +28,7 @@ class ExtendedNavBarViewController: UIViewController, UITableViewDataSource, UIT
         // Load some data to populate the table view with
         let citiesJSONURL = NSBundle.mainBundle().URLForResource("Cities", withExtension: "json")
         let citiesJSONData = NSData(contentsOfURL: citiesJSONURL!)!
-        self.cities = NSJSONSerialization.JSONObjectWithData(citiesJSONData, options: nil, error: nil) as! NSArray?
+        try! self.cities = NSJSONSerialization.JSONObjectWithData(citiesJSONData, options: []) as? NSArray
         
         // For the extended navigation bar effect to work, a few changes
         // must be made to the actual navigation bar.  Some of these changes could
@@ -58,7 +58,7 @@ class ExtendedNavBarViewController: UIViewController, UITableViewDataSource, UIT
     
     //| ----------------------------------------------------------------------------
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        var cell = tableView.dequeueReusableCellWithIdentifier("Cell") as! UITableViewCell?
+        var cell = tableView.dequeueReusableCellWithIdentifier("Cell")
         if cell == nil {
             cell = UITableViewCell(style: .Default, reuseIdentifier: "Cell")
         }

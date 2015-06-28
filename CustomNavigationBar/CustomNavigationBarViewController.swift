@@ -30,11 +30,11 @@ class CustomNavigationBarViewController: UITableViewController {
         // Load some data to populate the table view with
         let citiesJSONURL = NSBundle.mainBundle().URLForResource("Cities", withExtension: "json")
         let citiesJSONData = NSData(contentsOfURL: citiesJSONURL!)!
-        self.cities = NSJSONSerialization.JSONObjectWithData(citiesJSONData, options: nil, error: nil) as! NSArray?
+        try! self.cities = NSJSONSerialization.JSONObjectWithData(citiesJSONData, options: []) as? NSArray
         
         // Create a button and add it to our custom navigation bar.  The button
         // will return the user to the main menu when tapped.
-        let returnToMenuButton = UIButton.buttonWithType(.System) as! UIButton
+        let returnToMenuButton = UIButton(type: .System)
         returnToMenuButton.setTitle(NSLocalizedString("Return to Menu", comment: ""), forState: .Normal)
         returnToMenuButton.titleLabel?.font = returnToMenuButton.titleLabel!.font.fontWithSize(12.0)
         returnToMenuButton.addTarget(self, action: "returnToMenuAction:", forControlEvents: .TouchUpInside)
@@ -53,7 +53,7 @@ class CustomNavigationBarViewController: UITableViewController {
     //| ----------------------------------------------------------------------------
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "DetailSegue" {
-            (segue.destinationViewController as! CustomNavigationBarDetailViewController).city = self.cities?[self.tableView.indexPathForSelectedRow()?.row ?? 0] as! String?
+            (segue.destinationViewController as! CustomNavigationBarDetailViewController).city = self.cities?[self.tableView.indexPathForSelectedRow?.row ?? 0] as! String?
         }
     }
     
@@ -68,7 +68,7 @@ class CustomNavigationBarViewController: UITableViewController {
     
     //| ----------------------------------------------------------------------------
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("Cell") as! UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("Cell")!
         cell.textLabel?.text = self.cities?[indexPath.row] as! String?
         
         return cell

@@ -17,8 +17,8 @@
 class NavigationPromptViewController: UIViewController {
     
     //| ----------------------------------------------------------------------------
-    override func supportedInterfaceOrientations() -> Int {
-        return Int(UIInterfaceOrientationMask.Portrait.rawValue)
+    override func supportedInterfaceOrientations() -> UIInterfaceOrientationMask {
+        return UIInterfaceOrientationMask.Portrait
     }
     
     
