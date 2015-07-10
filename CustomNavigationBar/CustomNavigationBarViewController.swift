@@ -45,7 +45,7 @@ class CustomNavigationBarViewController: UITableViewController {
     //| ----------------------------------------------------------------------------
     //  IBAction for the button added to our custom navigation bar.
     //
-    @IBAction func returnToMenuAction(AnyObject) {
+    @IBAction func returnToMenuAction(_: AnyObject) {
         self.navigationController?.dismissViewControllerAnimated(true, completion: nil)
     }
     

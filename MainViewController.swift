@@ -29,7 +29,7 @@ class MainViewController: UITableViewController, UIActionSheetDelegate {
     //  Unwind action that is targeted by the demos which present a modal view
     //  controller, to return to the main screen.
     //
-    @IBAction func unwindToMainViewController(UIStoryboardSegue) {
+    @IBAction func unwindToMainViewController(_: UIStoryboardSegue) {
     }
     
     //MARK: -
@@ -65,7 +65,7 @@ class MainViewController: UITableViewController, UIActionSheetDelegate {
     //| ----------------------------------------------------------------------------
     //! IBAction for the 'Style' bar button item.
     //
-    @IBAction func styleAction(AnyObject) {
+    @IBAction func styleAction(_: AnyObject) {
         let styleAlert = UIActionSheet(title: NSLocalizedString("Choose a UIBarStyle:", comment: ""),
             delegate: self,
             cancelButtonTitle: NSLocalizedString("Cancel", comment: ""),

@@ -39,7 +39,12 @@ class CustomBackButtonViewController: UITableViewController {
         // The background should be pinned to the left and not stretch.
         backButtonBackgroundImage = backButtonBackgroundImage?.resizableImageWithCapInsets(UIEdgeInsetsMake(0, backButtonBackgroundImage!.size.width - 1, 0, 0))
         
-        let appearance = UIBarButtonItem.oop_appearanceWhenContainedIn(CustomBackButtonNavController.self)
+        let appearance: UIBarButtonItem
+        if #available(iOS 9.0, *) {
+            appearance = UIBarButtonItem.appearanceWhenContainedInInstancesOfClasses([CustomBackButtonNavController.self])
+        } else {
+            appearance = UIBarButtonItem.oop_appearanceWhenContainedIn(CustomBackButtonNavController.self)
+        }
         appearance.setBackButtonBackgroundImage(backButtonBackgroundImage, forState: .Normal, barMetrics: .Default)
         
         // Provide an empty backBarButton to hide the 'Back' text present by
