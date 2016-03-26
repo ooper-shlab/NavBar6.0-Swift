@@ -37,7 +37,7 @@ class CustomTitleViewController: UIViewController {
         segmentedControl.selectedSegmentIndex = 0
         segmentedControl.autoresizingMask = UIViewAutoresizing.FlexibleWidth
         segmentedControl.frame = CGRectMake(0, 0, 400.0, 30.0)
-        segmentedControl.addTarget(self, action: "action:", forControlEvents: .ValueChanged)
+        segmentedControl.addTarget(self, action: #selector(CustomTitleViewController.action(_:)), forControlEvents: .ValueChanged)
         
         self.navigationItem.titleView = segmentedControl
     }
@@ -47,7 +47,7 @@ class CustomTitleViewController: UIViewController {
     //! IBAction for the segmented control.
     //
     @IBAction func action(sender: AnyObject) {
-        NSLog("-[%@ %@], Selected segment is: %zi", NSStringFromClass(self.dynamicType), __FUNCTION__, sender.selectedSegmentIndex!)
+        NSLog("-[%@ %@], Selected segment is: %zi", NSStringFromClass(self.dynamicType), #function, sender.selectedSegmentIndex!)
     }
     
 }

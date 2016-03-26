@@ -48,7 +48,9 @@ class MainViewController: UITableViewController, UIActionSheetDelegate {
         case 1: // "Black Opaque"
             self.navigationController?.navigationBar.barStyle = UIBarStyle.Black
             self.navigationController?.navigationBar.translucent = false
-            self.navigationController?.navigationBar.tintColor = UIColor.whiteColor()
+//            self.navigationController?.navigationBar.tintColor = UIColor.whiteColor()
+            let barColor = UIColor(red:0.88, green:0.05, blue:0.05, alpha:1)
+            self.navigationController?.navigationBar.barTintColor = barColor
         case 2: // "Black Translucent"
             self.navigationController?.navigationBar.barStyle = UIBarStyle.Black
             self.navigationController?.navigationBar.translucent = true

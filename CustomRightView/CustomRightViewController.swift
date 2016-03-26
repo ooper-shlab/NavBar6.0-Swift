@@ -33,12 +33,12 @@ class CustomRightViewController: UIViewController {
             let addButton = UIBarButtonItem(title: NSLocalizedString("AddTitle", comment: ""),
                 style: UIBarButtonItemStyle.Bordered,
                 target: self,
-                action: "action:")
+                action: #selector(CustomRightViewController.action(_:)))
             self.navigationItem.rightBarButtonItem = addButton
         } else if sender.selectedSegmentIndex == 1 {
             // add our custom image button as the nav bar's custom right view
             let addButton = UIBarButtonItem(image: UIImage(named: "Email"),
-                style: UIBarButtonItemStyle.Bordered, target: self, action: "action:")
+                style: UIBarButtonItemStyle.Bordered, target: self, action: #selector(CustomRightViewController.action(_:)))
             self.navigationItem.rightBarButtonItem = addButton
         } else if sender.selectedSegmentIndex == 2 {
             // "Segmented" control to the right
@@ -47,7 +47,7 @@ class CustomRightViewController: UIViewController {
                 UIImage(named: "DownArrow")!,
                 ])
             
-            segmentedControl.addTarget(self, action: "action:", forControlEvents: .ValueChanged)
+            segmentedControl.addTarget(self, action: #selector(CustomRightViewController.action(_:)), forControlEvents: .ValueChanged)
             segmentedControl.frame = CGRectMake(0, 0, 90, 30.0)
             segmentedControl.momentary = true
             
@@ -64,7 +64,7 @@ class CustomRightViewController: UIViewController {
     //! IBAction for the various bar button items shown in this example.
     //
     @IBAction func action(sender: AnyObject) {
-        NSLog("-[%@ %@]", NSStringFromClass(self.dynamicType), __FUNCTION__)
+        NSLog("-[%@ %@]", NSStringFromClass(self.dynamicType), #function)
     }
     
 }

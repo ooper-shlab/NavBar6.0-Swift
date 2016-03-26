@@ -37,7 +37,7 @@ class CustomNavigationBarViewController: UITableViewController {
         let returnToMenuButton = UIButton(type: .System)
         returnToMenuButton.setTitle(NSLocalizedString("Return to Menu", comment: ""), forState: .Normal)
         returnToMenuButton.titleLabel?.font = returnToMenuButton.titleLabel!.font.fontWithSize(12.0)
-        returnToMenuButton.addTarget(self, action: "returnToMenuAction:", forControlEvents: .TouchUpInside)
+        returnToMenuButton.addTarget(self, action: #selector(CustomNavigationBarViewController.returnToMenuAction(_:)), forControlEvents: .TouchUpInside)
         (self.navigationController!.navigationBar as! CustomNavigationBar).customButton = returnToMenuButton
     }
     
